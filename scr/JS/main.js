@@ -1,11 +1,8 @@
-// import { bodyFrame } from "./Compenent/body.js"
+console.log("여기는 나오니?mainjs시작")
+import { headFunc } from "./Compenent/header.js";
 
-// export function mainFunc() {
-//     console.log("hello world1");
-    
-//     bodyFrame();
-    
-//     console.log("hello world2");
-// }
-const body = document.querySelector("#home");
-body.innerHTML = "<h1>World Hello</h1>";
+
+const $body = document.querySelector("#home");
+$body.innerHTML = "<h2>이제는 h2 tag</h2>"
+
+$body.append(headFunc("HeadIdAtt"));
